@@ -1,0 +1,26 @@
+# ✅ Ignore virtual env
+env/
+*.env
+
+# ✅ Ignore settings.py from all services
+**/settings.py
+
+# ✅ Ignore all Dockerfiles
+**/Dockerfile
+
+# ✅ Bytecode and cache
+__pycache__/
+*.py[cod]
+
+# ✅ Ignore SQLite DB files
+*.sqlite3
+
+# ✅ VSCode and system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# ✅ Ignore migrations (optional)
+**/migrations/*.py
+!**/migrations/__init__.py
+

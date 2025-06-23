@@ -1,0 +1,7 @@
+Django>=3.2
+djangorestframework
+pymysql
+gunicorn
+django-cors-headers
+pillow
+

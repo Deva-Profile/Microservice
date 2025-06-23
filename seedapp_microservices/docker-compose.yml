@@ -1,0 +1,15 @@
+
+
+services:
+  user_service:
+    build:
+      context: ./user_service
+    ports:
+      - "8001:8000"
+
+  product_service:
+    build:
+      context: ./product_service
+    ports:
+      - "8002:8000"
+

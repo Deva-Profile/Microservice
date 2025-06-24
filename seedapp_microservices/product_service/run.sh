@@ -1,11 +1,12 @@
 #!/bin/bash
+set -e  # Exit on any error
 
-# Apply migrations
+echo "🚀 Applying database migrations..."
 python manage.py migrate --noinput
 
-# Collect static files (if needed)
+# Uncomment this if you're serving static files with WhiteNoise or similar
+# echo "📦 Collecting static files..."
 # python manage.py collectstatic --noinput
 
-# Start Gunicorn server
-gunicorn product_project.wsgi:application --bind 0.0.0.0:8000
-
+echo "🔥 Starting Gunicorn server..."
+exec gunicorn product_project.wsgi:application --bind 0.0.0.0:8000

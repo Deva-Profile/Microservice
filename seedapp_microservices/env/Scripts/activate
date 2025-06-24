@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Deva\Documents\django projects\Agri-Micro\seedapp_microservices\env"
+VIRTUAL_ENV="C:\Users\Deva\OneDrive\Documents\Github\Microservice\seedapp_microservices\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

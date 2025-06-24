@@ -1,7 +1,9 @@
-Django>=3.2
-djangorestframework
-pymysql
-gunicorn
-django-cors-headers
-pillow
-
+asgiref==3.8.1
+backports.zoneinfo==0.2.1
+django==4.2.23
+djangorestframework==3.15.2
+PyMySQL==1.1.1
+sqlparse==0.5.3
+typing-extensions==4.13.2
+tzdata==2025.2
+whitenoise==6.7.0

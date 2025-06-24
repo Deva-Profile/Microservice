@@ -1,22 +1,27 @@
 # Base image
+FRO# Base image
 FROM python:3.10
 
-# Set working directory in the container
+# Set working directory
 WORKDIR /app
 
-# Copy and install Python dependencies
+# Install dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy project files into the container
+# Copy project files
 COPY . .
 
-# Set environment variables (optional but useful)
+# Add shell script to run migrations and start gunicorn
+COPY run.sh .
+RUN chmod +x run.sh
+
+# Environment configs
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-# Expose the port Django will run on
+# Expose port
 EXPOSE 8000
 
-# Run the Django development server
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+# Start the app using the shell script
+CMD ["./run.sh"]

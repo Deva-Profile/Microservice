@@ -4,5 +4,8 @@ pymysql
 gunicorn
 django-cors-headers
 pillow
+django-cloudinary-storage
+cloudinary
+
 
 

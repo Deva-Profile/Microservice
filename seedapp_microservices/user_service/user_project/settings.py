@@ -47,17 +47,7 @@ INSTALLED_APPS = [
     'rest_framework', 
     'corsheaders',
      'users',
-      'rest_framework_simplejwt',
 ]
-
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ],
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
-    ]
-}
 
 CORS_ALLOWED_ORIGINS = [
     "http://192.168.1.7:5173",

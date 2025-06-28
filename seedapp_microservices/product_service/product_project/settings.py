@@ -47,20 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'products',
     'rest_framework', 
-    'corsheaders',
-    'rest_framework_simplejwt',
-
+    'corsheaders',  
 ]
-
-
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ],
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAuthenticated',
-    ]
-}
 
 
 CORS_ALLOWED_ORIGINS = [

@@ -53,7 +53,8 @@ INSTALLED_APPS = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://192.168.1.7:5173",
-    "http://localhost:5173"  
+    "http://localhost:5173",
+    'https://react-fpu9.onrender.com'  
 ]   
 
 MIDDLEWARE = [
